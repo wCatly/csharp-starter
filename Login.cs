@@ -17,6 +17,7 @@ using System.Threading.Tasks;
 using AutoUpdaterDotNET;
 using Discord.Net;
 using SharpConfig;
+using Loader;
 
 namespace RiotAutomatization
 {
@@ -28,6 +29,11 @@ namespace RiotAutomatization
             InitializeComponent();
         }
 
+        public void Alert(string msg, Form_Alert.enmType type)
+        {
+            Form_Alert frm = new Form_Alert();
+            frm.showAlert(msg, type);
+        }
 
         private void siticoneControlBox1_Click(object sender, EventArgs e)
         {
@@ -36,12 +42,12 @@ namespace RiotAutomatization
 
         private void Login_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-
+            this.Alert("wcat31", Form_Alert.enmType.Success);
         }
     }
 }

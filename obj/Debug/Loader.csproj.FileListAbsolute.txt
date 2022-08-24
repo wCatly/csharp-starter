@@ -78,3 +78,4 @@ C:\Users\arsal\Documents\GitHub\csharp-starter\obj\Debug\Loader.csproj.Fody.Copy
 C:\Users\arsal\Documents\GitHub\csharp-starter\obj\Debug\Loader.csproj.CopyComplete
 C:\Users\arsal\Documents\GitHub\csharp-starter\obj\Debug\Loader.exe
 C:\Users\arsal\Documents\GitHub\csharp-starter\obj\Debug\Loader.pdb
+C:\Users\arsal\Documents\GitHub\csharp-starter\bin\Debug\Newtonsoft.Json.Bson.xml

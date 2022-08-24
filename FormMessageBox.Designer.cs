@@ -29,6 +29,7 @@ namespace RiotAutomatization
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMessageBox));
             this.panelTitleBar = new System.Windows.Forms.Panel();
             this.labelCaption = new System.Windows.Forms.Label();
             this.panelButtons = new System.Windows.Forms.Panel();
@@ -151,7 +152,7 @@ namespace RiotAutomatization
             // pictureBoxIcon
             // 
             this.pictureBoxIcon.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBoxIcon.Image = global::Loader.Properties.Resources.chat;
+            this.pictureBoxIcon.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxIcon.Image")));
             this.pictureBoxIcon.Location = new System.Drawing.Point(10, 10);
             this.pictureBoxIcon.Name = "pictureBoxIcon";
             this.pictureBoxIcon.Size = new System.Drawing.Size(40, 41);

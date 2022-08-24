@@ -254,23 +254,23 @@ namespace RiotAutomatization
             switch (icon)
             {
                 case MessageBoxIcon.Error: //Error
-                    this.pictureBoxIcon.Image = Resources.error;
+                    this.pictureBoxIcon.Image = Resources.MessageBoxError;
                     PrimaryColor = Color.FromArgb(224, 79, 95);
                     break;
                 case MessageBoxIcon.Information: //Information
-                    this.pictureBoxIcon.Image = Resources.information;
+                    this.pictureBoxIcon.Image = Resources.MessageBoxInfo;
                     PrimaryColor = Color.FromArgb(38, 191, 166);
                     break;
                 case MessageBoxIcon.Question://Question
-                    this.pictureBoxIcon.Image = Resources.question;
+                    this.pictureBoxIcon.Image = Resources.MessageBoxQuestion;
                     PrimaryColor = Color.FromArgb(10, 119, 232);
                     break;
                 case MessageBoxIcon.Exclamation://Exclamation
-                    this.pictureBoxIcon.Image = Resources.exclamation;
+                    this.pictureBoxIcon.Image = Resources.MessageBoxWarning;
                     PrimaryColor = Color.FromArgb(255, 140, 0);
                     break;
                 case MessageBoxIcon.None: //None
-                    this.pictureBoxIcon.Image = Resources.chat;
+                    this.pictureBoxIcon.Image = Resources.MessageBoxSucsess;
                     PrimaryColor = Color.SeaGreen;
                     break;
             }
