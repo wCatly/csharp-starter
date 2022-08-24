@@ -1,13 +1,12 @@
-using RiotAutomatization.API;
 using System;
+using Loader;
 using System.Windows.Forms;
+using System.Linq;
 using MessageBox;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Diagnostics;
 using System.Drawing;
-using System.Linq;
 using System.Management;
 using System.Net;
 using System.Net.NetworkInformation;
@@ -17,7 +16,10 @@ using System.Threading.Tasks;
 using AutoUpdaterDotNET;
 using Discord.Net;
 using SharpConfig;
-using Loader;
+using System.Runtime.InteropServices;
+using System.IO;
+using RiotAutomatization.API;
+using System.Diagnostics;
 
 namespace RiotAutomatization
 {
