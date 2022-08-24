@@ -1,4 +1,4 @@
-﻿
+﻿using Newtonsoft.Json;
 using System;
 using System.Diagnostics;
 using System.IO;
@@ -42,6 +42,10 @@ namespace RiotAutomatization.API
             p.StartInfo.FileName = "cmd.exe";
             p.StartInfo.Arguments = "/c wmic PROCESS WHERE name='RiotClientUx.exe' GET commandline";
             p.Start();
+            // Do not wait for the child process to exit before
+            // reading to the end of its redirected stream.
+            // p.WaitForExit();
+            // Read the output stream first and then wait.
             string output = p.StandardOutput.ReadToEnd();
             //p.WaitForExit();
 
@@ -87,7 +91,7 @@ namespace RiotAutomatization.API
         {
             string[] items = GetPortAndAuthKey();
 
-            foreach(string s in items)
+            foreach (string s in items)
             {
                 if (s == null || s == "")
                 {

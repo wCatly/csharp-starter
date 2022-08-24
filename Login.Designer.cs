@@ -18,7 +18,7 @@ namespace RiotAutomatization
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Siticone.UI.AnimatorNS.Animation animation3 = new Siticone.UI.AnimatorNS.Animation();
+            Siticone.UI.AnimatorNS.Animation animation2 = new Siticone.UI.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.siticoneDragControl1 = new Siticone.UI.WinForms.SiticoneDragControl(this.components);
             this.siticoneControlBox1 = new Siticone.UI.WinForms.SiticoneControlBox();
@@ -27,7 +27,9 @@ namespace RiotAutomatization
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.LoginBtn = new Siticone.UI.WinForms.SiticoneRoundedButton();
-            this.username = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
+            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.siticoneShadowForm = new Siticone.UI.WinForms.SiticoneShadowForm(this.components);
             this.SuspendLayout();
             // 
@@ -71,22 +73,22 @@ namespace RiotAutomatization
             // 
             this.siticoneTransition1.AnimationType = Siticone.UI.AnimatorNS.AnimationType.Rotate;
             this.siticoneTransition1.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(50);
-            animation3.RotateCoeff = 1F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 1F;
-            this.siticoneTransition1.DefaultAnimation = animation3;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(50);
+            animation2.RotateCoeff = 1F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 1F;
+            this.siticoneTransition1.DefaultAnimation = animation2;
             // 
             // label1
             // 
@@ -108,9 +110,9 @@ namespace RiotAutomatization
             this.label2.Location = new System.Drawing.Point(10, 11);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 19);
+            this.label2.Size = new System.Drawing.Size(44, 19);
             this.label2.TabIndex = 27;
-            this.label2.Text = "Loader Login";
+            this.label2.Text = "Login";
             // 
             // LoginBtn
             // 
@@ -124,7 +126,7 @@ namespace RiotAutomatization
             this.LoginBtn.ForeColor = System.Drawing.Color.White;
             this.LoginBtn.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             this.LoginBtn.HoveredState.Parent = this.LoginBtn;
-            this.LoginBtn.Location = new System.Drawing.Point(83, 173);
+            this.LoginBtn.Location = new System.Drawing.Point(93, 156);
             this.LoginBtn.Name = "LoginBtn";
             this.LoginBtn.ShadowDecoration.Parent = this.LoginBtn;
             this.LoginBtn.Size = new System.Drawing.Size(151, 27);
@@ -132,33 +134,70 @@ namespace RiotAutomatization
             this.LoginBtn.Text = "Login";
             this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
-            // username
+            // guna2TextBox1
             // 
-            this.username.AllowDrop = true;
-            this.username.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(127)))), ((int)(((byte)(243)))));
-            this.username.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.siticoneTransition1.SetDecoration(this.username, Siticone.UI.AnimatorNS.DecorationType.None);
-            this.username.DefaultText = "Username";
-            this.username.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.username.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.username.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.username.DisabledState.Parent = this.username;
-            this.username.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.username.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
-            this.username.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.username.FocusedState.Parent = this.username;
-            this.username.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.username.HoveredState.Parent = this.username;
-            this.username.Location = new System.Drawing.Point(46, 91);
-            this.username.Margin = new System.Windows.Forms.Padding(4);
-            this.username.Name = "username";
-            this.username.PasswordChar = '\0';
-            this.username.PlaceholderText = "";
-            this.username.SelectedText = "";
-            this.username.ShadowDecoration.Parent = this.username;
-            this.username.Size = new System.Drawing.Size(236, 30);
-            this.username.TabIndex = 33;
-            this.username.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox1.Animated = true;
+            this.guna2TextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(127)))), ((int)(((byte)(243)))));
+            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.siticoneTransition1.SetDecoration(this.guna2TextBox1, Siticone.UI.AnimatorNS.DecorationType.None);
+            this.guna2TextBox1.DefaultText = "";
+            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox1.ForeColor = System.Drawing.Color.White;
+            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.Location = new System.Drawing.Point(71, 72);
+            this.guna2TextBox1.Name = "guna2TextBox1";
+            this.guna2TextBox1.PasswordChar = '\0';
+            this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.guna2TextBox1.PlaceholderText = "Username";
+            this.guna2TextBox1.SelectedText = "";
+            this.guna2TextBox1.Size = new System.Drawing.Size(195, 25);
+            this.guna2TextBox1.TabIndex = 28;
+            // 
+            // guna2ContextMenuStrip1
+            // 
+            this.siticoneTransition1.SetDecoration(this.guna2ContextMenuStrip1, Siticone.UI.AnimatorNS.DecorationType.None);
+            this.guna2ContextMenuStrip1.Name = "guna2ContextMenuStrip1";
+            this.guna2ContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.guna2ContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.guna2ContextMenuStrip1.RenderStyle.ColorTable = null;
+            this.guna2ContextMenuStrip1.RenderStyle.RoundedEdges = true;
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // guna2TextBox2
+            // 
+            this.guna2TextBox2.Animated = true;
+            this.guna2TextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(127)))), ((int)(((byte)(243)))));
+            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.siticoneTransition1.SetDecoration(this.guna2TextBox2, Siticone.UI.AnimatorNS.DecorationType.None);
+            this.guna2TextBox2.DefaultText = "";
+            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox2.ForeColor = System.Drawing.Color.White;
+            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox2.Location = new System.Drawing.Point(71, 103);
+            this.guna2TextBox2.Name = "guna2TextBox2";
+            this.guna2TextBox2.PasswordChar = '\0';
+            this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.guna2TextBox2.PlaceholderText = "Password";
+            this.guna2TextBox2.SelectedText = "";
+            this.guna2TextBox2.Size = new System.Drawing.Size(195, 25);
+            this.guna2TextBox2.TabIndex = 30;
             // 
             // Login
             // 
@@ -166,8 +205,9 @@ namespace RiotAutomatization
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
-            this.ClientSize = new System.Drawing.Size(332, 344);
-            this.Controls.Add(this.username);
+            this.ClientSize = new System.Drawing.Size(332, 368);
+            this.Controls.Add(this.guna2TextBox2);
+            this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.LoginBtn);
             this.Controls.Add(this.label1);
@@ -205,6 +245,8 @@ namespace RiotAutomatization
         private System.Windows.Forms.Label label2;
         private Siticone.UI.WinForms.SiticoneRoundedButton LoginBtn;
         private Siticone.UI.WinForms.SiticoneShadowForm siticoneShadowForm;
-        private Siticone.UI.WinForms.SiticoneRoundedTextBox username;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2ContextMenuStrip guna2ContextMenuStrip1;
     }
 }
